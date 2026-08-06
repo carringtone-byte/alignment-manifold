@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use or discuss this research release, please cite it using this metadata."
+title: "Alignment Manifold: Post-Training Activation Geometry and Causal Evaluation"
+type: software
+authors:
+  - family-names: "Kinyanjui"
+    given-names: "Carringtone"
+version: 0.1.0
+date-released: 2026-08-06
+abstract: >-
+  Research code and evidence testing whether matched activation changes across
+  post-training checkpoints form a compact shared subspace or require
+  prompt-conditional trajectory descriptions.
