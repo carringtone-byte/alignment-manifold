@@ -1,0 +1,44 @@
+experiment:
+  name: olmo2_7b_fp16_cpu_offload_calibration
+  seed: 1729
+  artifact_dir: artifacts/trajectory_7b_fp16_calibration
+  hf_cache_dir: artifacts/unused_7b_fp16_cache
+  ephemeral_cache_root: artifacts/ephemeral_hf_cache_7b_fp16
+
+checkpoints:
+  dpo:
+    repo_id: allenai/OLMo-2-1124-7B-DPO
+    revision: d6fa9c9f6f5918d0bf2a162261e0620290c9d4ed
+    role: trajectory_parent
+    ephemeral_cache: true
+  rlvr_0180:
+    repo_id: allenai/OLMo-2-1124-7B-Instruct
+    revision: d2cc98e0a93809d41be113b2bfad45791f16969f
+    role: precision_calibration_donor
+    ephemeral_cache: true
+
+data:
+  path: data/precision_calibration_prompts.jsonl
+  expected_examples: 20
+  max_length: 512
+  train_fraction: 0.6
+  validation_fraction: 0.2
+  test_fraction: 0.2
+
+extraction:
+  device: cuda
+  dtype: float16
+  use_safetensors: true
+  device_map: auto
+  max_memory:
+    0: 4500MiB
+    cpu: 24GiB
+  batch_size: 1
+  token_regime: final_prompt
+  store_logits: false
+
+geometry:
+  ranks: [1, 2, 4, 8, 16]
+  random_controls: 5
+  bootstrap_samples: 20
+  local_components: [2]

@@ -1,0 +1,1742 @@
+{
+  "category_test_r2_across_seeds": {
+    "helpfulness": {
+      "maximum": 0.6335523506502843,
+      "mean": 0.5806278207426501,
+      "minimum": 0.5233877909747611,
+      "std": 0.03640320148198977
+    },
+    "honesty": {
+      "maximum": 0.26045762143286655,
+      "mean": 0.19780290148652385,
+      "minimum": 0.12420484749532767,
+      "std": 0.0360104353711183
+    },
+    "instruction_following": {
+      "maximum": 0.6794132462740581,
+      "mean": 0.6287415804698838,
+      "minimum": 0.5855797289294029,
+      "std": 0.028029833842167264
+    },
+    "safety": {
+      "maximum": 0.48403606678004474,
+      "mean": 0.42643651494257523,
+      "minimum": 0.23595878539220883,
+      "std": 0.06810745462211701
+    }
+  },
+  "kind": "trajectory_split_and_category_robustness",
+  "layer": 28,
+  "per_seed": [
+    {
+      "raw_chord_test": {
+        "fraction_raw_energy_reconstructed": 0.8753113484184002,
+        "mean_reconstruction_cosine": 0.9631675140265814,
+        "normalized_frobenius_error": 0.3531128029137429,
+        "r2_about_train_mean": 0.8556091235704126
+      },
+      "seed": 1729,
+      "split": {
+        "test": {
+          "categories": {
+            "helpfulness": 12,
+            "honesty": 8,
+            "instruction_following": 12,
+            "safety": 8
+          },
+          "clusters": 10,
+          "prompts": 40
+        },
+        "train": {
+          "categories": {
+            "helpfulness": 36,
+            "honesty": 24,
+            "instruction_following": 36,
+            "safety": 24
+          },
+          "clusters": 30,
+          "prompts": 120
+        },
+        "validation": {
+          "categories": {
+            "helpfulness": 12,
+            "honesty": 8,
+            "instruction_following": 12,
+            "safety": 8
+          },
+          "clusters": 10,
+          "prompts": 40
+        }
+      },
+      "test": {
+        "fraction_raw_energy_reconstructed": 0.5336971284295989,
+        "mean_reconstruction_cosine": 0.67893330939738,
+        "normalized_frobenius_error": 0.6828637284044314,
+        "r2_about_train_mean": 0.4681956544766648
+      },
+      "test_by_category": {
+        "helpfulness": {
+          "fraction_raw_energy_reconstructed": 0.6116276893345234,
+          "mean_reconstruction_cosine": 0.7421224028832366,
+          "normalized_frobenius_error": 0.6231952428135797,
+          "prompts": 12,
+          "r2_about_train_mean": 0.5746589240087039
+        },
+        "honesty": {
+          "fraction_raw_energy_reconstructed": 0.2561555215545457,
+          "mean_reconstruction_cosine": 0.531094088957344,
+          "normalized_frobenius_error": 0.8624641896597529,
+          "prompts": 8,
+          "r2_about_train_mean": 0.21152417004177593
+        },
+        "instruction_following": {
+          "fraction_raw_energy_reconstructed": 0.694526213526448,
+          "mean_reconstruction_cosine": 0.7879178283573487,
+          "normalized_frobenius_error": 0.5526968305260598,
+          "prompts": 12,
+          "r2_about_train_mean": 0.6218480551553687
+        },
+        "safety": {
+          "fraction_raw_energy_reconstructed": 0.33389639826995166,
+          "mean_reconstruction_cosine": 0.5685121114923887,
+          "normalized_frobenius_error": 0.816151702644826,
+          "prompts": 8,
+          "r2_about_train_mean": 0.4724730181474639
+        }
+      },
+      "validation": {
+        "fraction_raw_energy_reconstructed": 0.48679204889785666,
+        "mean_reconstruction_cosine": 0.6877447234679048,
+        "normalized_frobenius_error": 0.716385337023409,
+        "r2_about_train_mean": 0.41873246184699775
+      }
+    },
+    {
+      "raw_chord_test": {
+        "fraction_raw_energy_reconstructed": 0.8814512811036207,
+        "mean_reconstruction_cosine": 0.9628169823882132,
+        "normalized_frobenius_error": 0.3443090456209063,
+        "r2_about_train_mean": 0.8629090381738137
+      },
+      "seed": 1730,
+      "split": {
+        "test": {
+          "categories": {
+            "helpfulness": 12,
+            "honesty": 8,
+            "instruction_following": 12,
+            "safety": 8
+          },
+          "clusters": 10,
+          "prompts": 40
+        },
+        "train": {
+          "categories": {
+            "helpfulness": 36,
+            "honesty": 24,
+            "instruction_following": 36,
+            "safety": 24
+          },
+          "clusters": 30,
+          "prompts": 120
+        },
+        "validation": {
+          "categories": {
+            "helpfulness": 12,
+            "honesty": 8,
+            "instruction_following": 12,
+            "safety": 8
+          },
+          "clusters": 10,
+          "prompts": 40
+        }
+      },
+      "test": {
+        "fraction_raw_energy_reconstructed": 0.5255458343306967,
+        "mean_reconstruction_cosine": 0.7003671516497708,
+        "normalized_frobenius_error": 0.6888063339352385,
+        "r2_about_train_mean": 0.4594280482310088
+      },
+      "test_by_category": {
+        "helpfulness": {
+          "fraction_raw_energy_reconstructed": 0.6556385453373866,
+          "mean_reconstruction_cosine": 0.7717947638070443,
+          "normalized_frobenius_error": 0.586823188586318,
+          "prompts": 12,
+          "r2_about_train_mean": 0.6335523506502843
+        },
+        "honesty": {
+          "fraction_raw_energy_reconstructed": 0.26391260774372416,
+          "mean_reconstruction_cosine": 0.5684017334163939,
+          "normalized_frobenius_error": 0.85795535563121,
+          "prompts": 8,
+          "r2_about_train_mean": 0.21494212056300543
+        },
+        "instruction_following": {
+          "fraction_raw_energy_reconstructed": 0.6800573949486513,
+          "mean_reconstruction_cosine": 0.7953204888426364,
+          "normalized_frobenius_error": 0.5656346922275443,
+          "prompts": 12,
+          "r2_about_train_mean": 0.6042331265025807
+        },
+        "safety": {
+          "fraction_raw_energy_reconstructed": 0.3403694762031313,
+          "mean_reconstruction_cosine": 0.5827611463100254,
+          "normalized_frobenius_error": 0.8121764117461604,
+          "prompts": 8,
+          "r2_about_train_mean": 0.4739191507553121
+        }
+      },
+      "validation": {
+        "fraction_raw_energy_reconstructed": 0.5160240006295347,
+        "mean_reconstruction_cosine": 0.6626161431504899,
+        "normalized_frobenius_error": 0.6956838357835154,
+        "r2_about_train_mean": 0.44949730464421067
+      }
+    },
+    {
+      "raw_chord_test": {
+        "fraction_raw_energy_reconstructed": 0.8675326844293416,
+        "mean_reconstruction_cosine": 0.9624970770618317,
+        "normalized_frobenius_error": 0.36396059617856763,
+        "r2_about_train_mean": 0.8517861284976975
+      },
+      "seed": 1731,
+      "split": {
+        "test": {
+          "categories": {
+            "helpfulness": 12,
+            "honesty": 8,
+            "instruction_following": 12,
+            "safety": 8
+          },
+          "clusters": 10,
+          "prompts": 40
+        },
+        "train": {
+          "categories": {
+            "helpfulness": 36,
+            "honesty": 24,
+            "instruction_following": 36,
+            "safety": 24
+          },
+          "clusters": 30,
+          "prompts": 120
+        },
+        "validation": {
+          "categories": {
+            "helpfulness": 12,
+            "honesty": 8,
+            "instruction_following": 12,
+            "safety": 8
+          },
+          "clusters": 10,
+          "prompts": 40
+        }
+      },
+      "test": {
+        "fraction_raw_energy_reconstructed": 0.42070400117267626,
+        "mean_reconstruction_cosine": 0.6856534579328442,
+        "normalized_frobenius_error": 0.7611149708337918,
+        "r2_about_train_mean": 0.355814124445192
+      },
+      "test_by_category": {
+        "helpfulness": {
+          "fraction_raw_energy_reconstructed": 0.6310848238221916,
+          "mean_reconstruction_cosine": 0.7566727607853011,
+          "normalized_frobenius_error": 0.607383878760219,
+          "prompts": 12,
+          "r2_about_train_mean": 0.5932874283174903
+        },
+        "honesty": {
+          "fraction_raw_energy_reconstructed": 0.1929475340197071,
+          "mean_reconstruction_cosine": 0.4901840508344926,
+          "normalized_frobenius_error": 0.8983609886789903,
+          "prompts": 8,
+          "r2_about_train_mean": 0.15786260195868174
+        },
+        "instruction_following": {
+          "fraction_raw_energy_reconstructed": 0.6768508934127553,
+          "mean_reconstruction_cosine": 0.8115346096384433,
+          "normalized_frobenius_error": 0.568462053779533,
+          "prompts": 12,
+          "r2_about_train_mean": 0.6003040510064022
+        },
+        "safety": {
+          "fraction_raw_energy_reconstructed": 0.33965736300970595,
+          "mean_reconstruction_cosine": 0.5857721825792631,
+          "normalized_frobenius_error": 0.8126146915914664,
+          "prompts": 8,
+          "r2_about_train_mean": 0.43298190644814505
+        }
+      },
+      "validation": {
+        "fraction_raw_energy_reconstructed": 0.5235015047377787,
+        "mean_reconstruction_cosine": 0.6827924667883499,
+        "normalized_frobenius_error": 0.6902887042840997,
+        "r2_about_train_mean": 0.45635569238178186
+      }
+    },
+    {
+      "raw_chord_test": {
+        "fraction_raw_energy_reconstructed": 0.8648095706975045,
+        "mean_reconstruction_cosine": 0.9660009533797801,
+        "normalized_frobenius_error": 0.36768251155377996,
+        "r2_about_train_mean": 0.8446549454991321
+      },
+      "seed": 1732,
+      "split": {
+        "test": {
+          "categories": {
+            "helpfulness": 12,
+            "honesty": 8,
+            "instruction_following": 12,
+            "safety": 8
+          },
+          "clusters": 10,
+          "prompts": 40
+        },
+        "train": {
+          "categories": {
+            "helpfulness": 36,
+            "honesty": 24,
+            "instruction_following": 36,
+            "safety": 24
+          },
+          "clusters": 30,
+          "prompts": 120
+        },
+        "validation": {
+          "categories": {
+            "helpfulness": 12,
+            "honesty": 8,
+            "instruction_following": 12,
+            "safety": 8
+          },
+          "clusters": 10,
+          "prompts": 40
+        }
+      },
+      "test": {
+        "fraction_raw_energy_reconstructed": 0.4879158919209797,
+        "mean_reconstruction_cosine": 0.6882159192956988,
+        "normalized_frobenius_error": 0.7156005226933672,
+        "r2_about_train_mean": 0.4165546518154405
+      },
+      "test_by_category": {
+        "helpfulness": {
+          "fraction_raw_energy_reconstructed": 0.6429035802227716,
+          "mean_reconstruction_cosine": 0.7614220113285509,
+          "normalized_frobenius_error": 0.5975754511166171,
+          "prompts": 12,
+          "r2_about_train_mean": 0.6099656652289948
+        },
+        "honesty": {
+          "fraction_raw_energy_reconstructed": 0.21606783978762734,
+          "mean_reconstruction_cosine": 0.523698406966885,
+          "normalized_frobenius_error": 0.8853994354032381,
+          "prompts": 8,
+          "r2_about_train_mean": 0.16581443544434982
+        },
+        "instruction_following": {
+          "fraction_raw_energy_reconstructed": 0.7127268081600154,
+          "mean_reconstruction_cosine": 0.8258167079148084,
+          "normalized_frobenius_error": 0.5359787233090364,
+          "prompts": 12,
+          "r2_about_train_mean": 0.6426363911699493
+        },
+        "safety": {
+          "fraction_raw_energy_reconstructed": 0.29047945803792274,
+          "mean_reconstruction_cosine": 0.5365231105367908,
+          "normalized_frobenius_error": 0.8423304232675425,
+          "prompts": 8,
+          "r2_about_train_mean": 0.3457853025232679
+        }
+      },
+      "validation": {
+        "fraction_raw_energy_reconstructed": 0.5192668232859967,
+        "mean_reconstruction_cosine": 0.695738876116801,
+        "normalized_frobenius_error": 0.6933492458451248,
+        "r2_about_train_mean": 0.4550105267485335
+      }
+    },
+    {
+      "raw_chord_test": {
+        "fraction_raw_energy_reconstructed": 0.8740149597086575,
+        "mean_reconstruction_cosine": 0.9642016220260011,
+        "normalized_frobenius_error": 0.3549437142581095,
+        "r2_about_train_mean": 0.858071123837858
+      },
+      "seed": 1733,
+      "split": {
+        "test": {
+          "categories": {
+            "helpfulness": 12,
+            "honesty": 8,
+            "instruction_following": 12,
+            "safety": 8
+          },
+          "clusters": 10,
+          "prompts": 40
+        },
+        "train": {
+          "categories": {
+            "helpfulness": 36,
+            "honesty": 24,
+            "instruction_following": 36,
+            "safety": 24
+          },
+          "clusters": 30,
+          "prompts": 120
+        },
+        "validation": {
+          "categories": {
+            "helpfulness": 12,
+            "honesty": 8,
+            "instruction_following": 12,
+            "safety": 8
+          },
+          "clusters": 10,
+          "prompts": 40
+        }
+      },
+      "test": {
+        "fraction_raw_energy_reconstructed": 0.48287052647877116,
+        "mean_reconstruction_cosine": 0.6893935912713082,
+        "normalized_frobenius_error": 0.7191171486769238,
+        "r2_about_train_mean": 0.42347451658518365
+      },
+      "test_by_category": {
+        "helpfulness": {
+          "fraction_raw_energy_reconstructed": 0.5652410659024136,
+          "mean_reconstruction_cosine": 0.7402198113418527,
+          "normalized_frobenius_error": 0.6593625209985675,
+          "prompts": 12,
+          "r2_about_train_mean": 0.5269561244278843
+        },
+        "honesty": {
+          "fraction_raw_energy_reconstructed": 0.22179595182851575,
+          "mean_reconstruction_cosine": 0.5126313905462293,
+          "normalized_frobenius_error": 0.882158743181455,
+          "prompts": 8,
+          "r2_about_train_mean": 0.19201319051281007
+        },
+        "instruction_following": {
+          "fraction_raw_energy_reconstructed": 0.7347812161948936,
+          "mean_reconstruction_cosine": 0.8324573537143137,
+          "normalized_frobenius_error": 0.5149939648239642,
+          "prompts": 12,
+          "r2_about_train_mean": 0.6705101473616402
+        },
+        "safety": {
+          "fraction_raw_energy_reconstructed": 0.3367701872074317,
+          "mean_reconstruction_cosine": 0.5753208173027097,
+          "normalized_frobenius_error": 0.8143892268397025,
+          "prompts": 8,
+          "r2_about_train_mean": 0.47117913110722964
+        }
+      },
+      "validation": {
+        "fraction_raw_energy_reconstructed": 0.5669305649497054,
+        "mean_reconstruction_cosine": 0.709888054493582,
+        "normalized_frobenius_error": 0.6580801129424096,
+        "r2_about_train_mean": 0.49886461146598116
+      }
+    },
+    {
+      "raw_chord_test": {
+        "fraction_raw_energy_reconstructed": 0.8806090880272286,
+        "mean_reconstruction_cosine": 0.963085240763802,
+        "normalized_frobenius_error": 0.34552990025867714,
+        "r2_about_train_mean": 0.8634435344381651
+      },
+      "seed": 1734,
+      "split": {
+        "test": {
+          "categories": {
+            "helpfulness": 12,
+            "honesty": 8,
+            "instruction_following": 12,
+            "safety": 8
+          },
+          "clusters": 10,
+          "prompts": 40
+        },
+        "train": {
+          "categories": {
+            "helpfulness": 36,
+            "honesty": 24,
+            "instruction_following": 36,
+            "safety": 24
+          },
+          "clusters": 30,
+          "prompts": 120
+        },
+        "validation": {
+          "categories": {
+            "helpfulness": 12,
+            "honesty": 8,
+            "instruction_following": 12,
+            "safety": 8
+          },
+          "clusters": 10,
+          "prompts": 40
+        }
+      },
+      "test": {
+        "fraction_raw_energy_reconstructed": 0.48804109503937465,
+        "mean_reconstruction_cosine": 0.6900520237518233,
+        "normalized_frobenius_error": 0.7155130361919518,
+        "r2_about_train_mean": 0.42141631048144323
+      },
+      "test_by_category": {
+        "helpfulness": {
+          "fraction_raw_energy_reconstructed": 0.5668112793826146,
+          "mean_reconstruction_cosine": 0.7379908827841289,
+          "normalized_frobenius_error": 0.6581707381959375,
+          "prompts": 12,
+          "r2_about_train_mean": 0.5285359399157993
+        },
+        "honesty": {
+          "fraction_raw_energy_reconstructed": 0.24486261970830314,
+          "mean_reconstruction_cosine": 0.5453519908862011,
+          "normalized_frobenius_error": 0.8689864097278489,
+          "prompts": 8,
+          "r2_about_train_mean": 0.2043709323524452
+        },
+        "instruction_following": {
+          "fraction_raw_energy_reconstructed": 0.66931415996915,
+          "mean_reconstruction_cosine": 0.8072671471787455,
+          "normalized_frobenius_error": 0.5750529019410736,
+          "prompts": 12,
+          "r2_about_train_mean": 0.5920777238087875
+        },
+        "safety": {
+          "fraction_raw_energy_reconstructed": 0.36590424141345,
+          "mean_reconstruction_cosine": 0.587021082928567,
+          "normalized_frobenius_error": 0.7963012988728262,
+          "prompts": 8,
+          "r2_about_train_mean": 0.47560899755984676
+        }
+      },
+      "validation": {
+        "fraction_raw_energy_reconstructed": 0.5919652858523416,
+        "mean_reconstruction_cosine": 0.6994144626745995,
+        "normalized_frobenius_error": 0.6387759498820055,
+        "r2_about_train_mean": 0.5291935793307614
+      }
+    },
+    {
+      "raw_chord_test": {
+        "fraction_raw_energy_reconstructed": 0.8798785727467374,
+        "mean_reconstruction_cosine": 0.9636407341103593,
+        "normalized_frobenius_error": 0.3465853823421619,
+        "r2_about_train_mean": 0.8633144080984887
+      },
+      "seed": 1735,
+      "split": {
+        "test": {
+          "categories": {
+            "helpfulness": 12,
+            "honesty": 8,
+            "instruction_following": 12,
+            "safety": 8
+          },
+          "clusters": 10,
+          "prompts": 40
+        },
+        "train": {
+          "categories": {
+            "helpfulness": 36,
+            "honesty": 24,
+            "instruction_following": 36,
+            "safety": 24
+          },
+          "clusters": 30,
+          "prompts": 120
+        },
+        "validation": {
+          "categories": {
+            "helpfulness": 12,
+            "honesty": 8,
+            "instruction_following": 12,
+            "safety": 8
+          },
+          "clusters": 10,
+          "prompts": 40
+        }
+      },
+      "test": {
+        "fraction_raw_energy_reconstructed": 0.4833937430738938,
+        "mean_reconstruction_cosine": 0.6959673205338649,
+        "normalized_frobenius_error": 0.7187532656803072,
+        "r2_about_train_mean": 0.4197542301869164
+      },
+      "test_by_category": {
+        "helpfulness": {
+          "fraction_raw_energy_reconstructed": 0.6552896037927931,
+          "mean_reconstruction_cosine": 0.7798328951460058,
+          "normalized_frobenius_error": 0.587120427346219,
+          "prompts": 12,
+          "r2_about_train_mean": 0.625340317357772
+        },
+        "honesty": {
+          "fraction_raw_energy_reconstructed": 0.22327021615532905,
+          "mean_reconstruction_cosine": 0.5301431639726243,
+          "normalized_frobenius_error": 0.8813227466965045,
+          "prompts": 8,
+          "r2_about_train_mean": 0.18542046462021888
+        },
+        "instruction_following": {
+          "fraction_raw_energy_reconstructed": 0.6918645401358023,
+          "mean_reconstruction_cosine": 0.8063358096540538,
+          "normalized_frobenius_error": 0.5550995044712232,
+          "prompts": 12,
+          "r2_about_train_mean": 0.619837377726244
+        },
+        "safety": {
+          "fraction_raw_energy_reconstructed": 0.33349191574137094,
+          "mean_reconstruction_cosine": 0.5704403815111025,
+          "normalized_frobenius_error": 0.8163994636565051,
+          "prompts": 8,
+          "r2_about_train_mean": 0.4666025053851641
+        }
+      },
+      "validation": {
+        "fraction_raw_energy_reconstructed": 0.455722436130383,
+        "mean_reconstruction_cosine": 0.6793285804891578,
+        "normalized_frobenius_error": 0.7377516952671929,
+        "r2_about_train_mean": 0.3925556477305475
+      }
+    },
+    {
+      "raw_chord_test": {
+        "fraction_raw_energy_reconstructed": 0.8772986804246068,
+        "mean_reconstruction_cosine": 0.9640225488445742,
+        "normalized_frobenius_error": 0.35028748132839865,
+        "r2_about_train_mean": 0.8600998185801965
+      },
+      "seed": 1736,
+      "split": {
+        "test": {
+          "categories": {
+            "helpfulness": 12,
+            "honesty": 8,
+            "instruction_following": 12,
+            "safety": 8
+          },
+          "clusters": 10,
+          "prompts": 40
+        },
+        "train": {
+          "categories": {
+            "helpfulness": 36,
+            "honesty": 24,
+            "instruction_following": 36,
+            "safety": 24
+          },
+          "clusters": 30,
+          "prompts": 120
+        },
+        "validation": {
+          "categories": {
+            "helpfulness": 12,
+            "honesty": 8,
+            "instruction_following": 12,
+            "safety": 8
+          },
+          "clusters": 10,
+          "prompts": 40
+        }
+      },
+      "test": {
+        "fraction_raw_energy_reconstructed": 0.5007630972954984,
+        "mean_reconstruction_cosine": 0.6849989341606734,
+        "normalized_frobenius_error": 0.7065669838766184,
+        "r2_about_train_mean": 0.43755178738381706
+      },
+      "test_by_category": {
+        "helpfulness": {
+          "fraction_raw_energy_reconstructed": 0.6377121363615113,
+          "mean_reconstruction_cosine": 0.7595897103610633,
+          "normalized_frobenius_error": 0.6019035334989227,
+          "prompts": 12,
+          "r2_about_train_mean": 0.5995772384937584
+        },
+        "honesty": {
+          "fraction_raw_energy_reconstructed": 0.228027387879975,
+          "mean_reconstruction_cosine": 0.5198911709431095,
+          "normalized_frobenius_error": 0.8786197198561077,
+          "prompts": 8,
+          "r2_about_train_mean": 0.19050959153399583
+        },
+        "instruction_following": {
+          "fraction_raw_energy_reconstructed": 0.7137146128972961,
+          "mean_reconstruction_cosine": 0.8181756540463607,
+          "normalized_frobenius_error": 0.5350564335681834,
+          "prompts": 12,
+          "r2_about_train_mean": 0.6493542196461369
+        },
+        "safety": {
+          "fraction_raw_energy_reconstructed": 0.2873352317745663,
+          "mean_reconstruction_cosine": 0.5384554535315962,
+          "normalized_frobenius_error": 0.8441947454381801,
+          "prompts": 8,
+          "r2_about_train_mean": 0.3507249077772039
+        }
+      },
+      "validation": {
+        "fraction_raw_energy_reconstructed": 0.5690682331417936,
+        "mean_reconstruction_cosine": 0.7112301455627257,
+        "normalized_frobenius_error": 0.6564539335385282,
+        "r2_about_train_mean": 0.5045220498757945
+      }
+    },
+    {
+      "raw_chord_test": {
+        "fraction_raw_energy_reconstructed": 0.8812191136450918,
+        "mean_reconstruction_cosine": 0.9633427984997166,
+        "normalized_frobenius_error": 0.3446460305224888,
+        "r2_about_train_mean": 0.861700350937781
+      },
+      "seed": 1737,
+      "split": {
+        "test": {
+          "categories": {
+            "helpfulness": 12,
+            "honesty": 8,
+            "instruction_following": 12,
+            "safety": 8
+          },
+          "clusters": 10,
+          "prompts": 40
+        },
+        "train": {
+          "categories": {
+            "helpfulness": 36,
+            "honesty": 24,
+            "instruction_following": 36,
+            "safety": 24
+          },
+          "clusters": 30,
+          "prompts": 120
+        },
+        "validation": {
+          "categories": {
+            "helpfulness": 12,
+            "honesty": 8,
+            "instruction_following": 12,
+            "safety": 8
+          },
+          "clusters": 10,
+          "prompts": 40
+        }
+      },
+      "test": {
+        "fraction_raw_energy_reconstructed": 0.5600200136702638,
+        "mean_reconstruction_cosine": 0.6948034583054304,
+        "normalized_frobenius_error": 0.6633098720279506,
+        "r2_about_train_mean": 0.49649089264949264
+      },
+      "test_by_category": {
+        "helpfulness": {
+          "fraction_raw_energy_reconstructed": 0.651749120734169,
+          "mean_reconstruction_cosine": 0.7701955190563498,
+          "normalized_frobenius_error": 0.5901278499323946,
+          "prompts": 12,
+          "r2_about_train_mean": 0.6131470811533859
+        },
+        "honesty": {
+          "fraction_raw_energy_reconstructed": 0.2572538414143807,
+          "mean_reconstruction_cosine": 0.5325533132127852,
+          "normalized_frobenius_error": 0.8618272208427971,
+          "prompts": 8,
+          "r2_about_train_mean": 0.22139176757522716
+        },
+        "instruction_following": {
+          "fraction_raw_energy_reconstructed": 0.711624872404198,
+          "mean_reconstruction_cosine": 0.8250542687881288,
+          "normalized_frobenius_error": 0.5370057053661552,
+          "prompts": 12,
+          "r2_about_train_mean": 0.646714893824621
+        },
+        "safety": {
+          "fraction_raw_energy_reconstructed": 0.29263684824551817,
+          "mean_reconstruction_cosine": 0.5485892954042991,
+          "normalized_frobenius_error": 0.8410488402907894,
+          "prompts": 8,
+          "r2_about_train_mean": 0.3455327185077427
+        }
+      },
+      "validation": {
+        "fraction_raw_energy_reconstructed": 0.472554137271994,
+        "mean_reconstruction_cosine": 0.686531933902258,
+        "normalized_frobenius_error": 0.7262546817253613,
+        "r2_about_train_mean": 0.41060347418788523
+      }
+    },
+    {
+      "raw_chord_test": {
+        "fraction_raw_energy_reconstructed": 0.8814851985572142,
+        "mean_reconstruction_cosine": 0.9611339159591129,
+        "normalized_frobenius_error": 0.34425978772256544,
+        "r2_about_train_mean": 0.8633670928067446
+      },
+      "seed": 1738,
+      "split": {
+        "test": {
+          "categories": {
+            "helpfulness": 12,
+            "honesty": 8,
+            "instruction_following": 12,
+            "safety": 8
+          },
+          "clusters": 10,
+          "prompts": 40
+        },
+        "train": {
+          "categories": {
+            "helpfulness": 36,
+            "honesty": 24,
+            "instruction_following": 36,
+            "safety": 24
+          },
+          "clusters": 30,
+          "prompts": 120
+        },
+        "validation": {
+          "categories": {
+            "helpfulness": 12,
+            "honesty": 8,
+            "instruction_following": 12,
+            "safety": 8
+          },
+          "clusters": 10,
+          "prompts": 40
+        }
+      },
+      "test": {
+        "fraction_raw_energy_reconstructed": 0.51641377568904,
+        "mean_reconstruction_cosine": 0.7038028138330306,
+        "normalized_frobenius_error": 0.6954036412839381,
+        "r2_about_train_mean": 0.45085946891674666
+      },
+      "test_by_category": {
+        "helpfulness": {
+          "fraction_raw_energy_reconstructed": 0.6532049006747103,
+          "mean_reconstruction_cosine": 0.766639085159638,
+          "normalized_frobenius_error": 0.5888931136677433,
+          "prompts": 12,
+          "r2_about_train_mean": 0.6119728224996921
+        },
+        "honesty": {
+          "fraction_raw_energy_reconstructed": 0.19449877307284047,
+          "mean_reconstruction_cosine": 0.4970034257336587,
+          "normalized_frobenius_error": 0.8974972016263669,
+          "prompts": 8,
+          "r2_about_train_mean": 0.1567481389300327
+        },
+        "instruction_following": {
+          "fraction_raw_energy_reconstructed": 0.7310896715495397,
+          "mean_reconstruction_cosine": 0.8436263380930993,
+          "normalized_frobenius_error": 0.518565645266306,
+          "prompts": 12,
+          "r2_about_train_mean": 0.666703045045967
+        },
+        "safety": {
+          "fraction_raw_energy_reconstructed": 0.38806578741591913,
+          "mean_reconstruction_cosine": 0.6066125086075261,
+          "normalized_frobenius_error": 0.7822622402903523,
+          "prompts": 8,
+          "r2_about_train_mean": 0.48378399656956783
+        }
+      },
+      "validation": {
+        "fraction_raw_energy_reconstructed": 0.4379561837415482,
+        "mean_reconstruction_cosine": 0.6790913214502596,
+        "normalized_frobenius_error": 0.7496958158202911,
+        "r2_about_train_mean": 0.3723614613451819
+      }
+    },
+    {
+      "raw_chord_test": {
+        "fraction_raw_energy_reconstructed": 0.8786942708461475,
+        "mean_reconstruction_cosine": 0.9616432678572785,
+        "normalized_frobenius_error": 0.3482897201380663,
+        "r2_about_train_mean": 0.8587566349288416
+      },
+      "seed": 1739,
+      "split": {
+        "test": {
+          "categories": {
+            "helpfulness": 12,
+            "honesty": 8,
+            "instruction_following": 12,
+            "safety": 8
+          },
+          "clusters": 10,
+          "prompts": 40
+        },
+        "train": {
+          "categories": {
+            "helpfulness": 36,
+            "honesty": 24,
+            "instruction_following": 36,
+            "safety": 24
+          },
+          "clusters": 30,
+          "prompts": 120
+        },
+        "validation": {
+          "categories": {
+            "helpfulness": 12,
+            "honesty": 8,
+            "instruction_following": 12,
+            "safety": 8
+          },
+          "clusters": 10,
+          "prompts": 40
+        }
+      },
+      "test": {
+        "fraction_raw_energy_reconstructed": 0.5498729581597778,
+        "mean_reconstruction_cosine": 0.6969715114807499,
+        "normalized_frobenius_error": 0.6709150779645828,
+        "r2_about_train_mean": 0.48368939936899746
+      },
+      "test_by_category": {
+        "helpfulness": {
+          "fraction_raw_energy_reconstructed": 0.6166457157633489,
+          "mean_reconstruction_cosine": 0.7543018235076551,
+          "normalized_frobenius_error": 0.6191561065164836,
+          "prompts": 12,
+          "r2_about_train_mean": 0.5780472860782362
+        },
+        "honesty": {
+          "fraction_raw_energy_reconstructed": 0.28459123415449483,
+          "mean_reconstruction_cosine": 0.5571743815302416,
+          "normalized_frobenius_error": 0.8458184000395742,
+          "prompts": 8,
+          "r2_about_train_mean": 0.23437715632844425
+        },
+        "instruction_following": {
+          "fraction_raw_energy_reconstructed": 0.6986699957079867,
+          "mean_reconstruction_cosine": 0.8121733831297167,
+          "normalized_frobenius_error": 0.5489353370771581,
+          "prompts": 12,
+          "r2_about_train_mean": 0.6310460221982133
+        },
+        "safety": {
+          "fraction_raw_energy_reconstructed": 0.3239939517934831,
+          "mean_reconstruction_cosine": 0.5779703662640037,
+          "normalized_frobenius_error": 0.8221958697333117,
+          "prompts": 8,
+          "r2_about_train_mean": 0.37291546510707896
+        }
+      },
+      "validation": {
+        "fraction_raw_energy_reconstructed": 0.5084854404444983,
+        "mean_reconstruction_cosine": 0.6711034384978066,
+        "normalized_frobenius_error": 0.7010809935774195,
+        "r2_about_train_mean": 0.44024469462602134
+      }
+    },
+    {
+      "raw_chord_test": {
+        "fraction_raw_energy_reconstructed": 0.8713697277670525,
+        "mean_reconstruction_cosine": 0.9608477430135782,
+        "normalized_frobenius_error": 0.3586506269797217,
+        "r2_about_train_mean": 0.8540043782662948
+      },
+      "seed": 1740,
+      "split": {
+        "test": {
+          "categories": {
+            "helpfulness": 12,
+            "honesty": 8,
+            "instruction_following": 12,
+            "safety": 8
+          },
+          "clusters": 10,
+          "prompts": 40
+        },
+        "train": {
+          "categories": {
+            "helpfulness": 36,
+            "honesty": 24,
+            "instruction_following": 36,
+            "safety": 24
+          },
+          "clusters": 30,
+          "prompts": 120
+        },
+        "validation": {
+          "categories": {
+            "helpfulness": 12,
+            "honesty": 8,
+            "instruction_following": 12,
+            "safety": 8
+          },
+          "clusters": 10,
+          "prompts": 40
+        }
+      },
+      "test": {
+        "fraction_raw_energy_reconstructed": 0.46509226473338505,
+        "mean_reconstruction_cosine": 0.6869979044819992,
+        "normalized_frobenius_error": 0.7313738683235921,
+        "r2_about_train_mean": 0.39883383900817515
+      },
+      "test_by_category": {
+        "helpfulness": {
+          "fraction_raw_energy_reconstructed": 0.6388919212665032,
+          "mean_reconstruction_cosine": 0.7652099819900816,
+          "normalized_frobenius_error": 0.6009226894813482,
+          "prompts": 12,
+          "r2_about_train_mean": 0.6021347661041443
+        },
+        "honesty": {
+          "fraction_raw_energy_reconstructed": 0.17655722826566644,
+          "mean_reconstruction_cosine": 0.48580620860666524,
+          "normalized_frobenius_error": 0.9074374753856783,
+          "prompts": 8,
+          "r2_about_train_mean": 0.132794690435166
+        },
+        "instruction_following": {
+          "fraction_raw_energy_reconstructed": 0.7309578213280405,
+          "mean_reconstruction_cosine": 0.8323664763882214,
+          "normalized_frobenius_error": 0.5186927594173255,
+          "prompts": 12,
+          "r2_about_train_mean": 0.6674353104763953
+        },
+        "safety": {
+          "fraction_raw_energy_reconstructed": 0.3139143279402714,
+          "mean_reconstruction_cosine": 0.5528186255774737,
+          "normalized_frobenius_error": 0.8283028866663019,
+          "prompts": 8,
+          "r2_about_train_mean": 0.4416174939432954
+        }
+      },
+      "validation": {
+        "fraction_raw_energy_reconstructed": 0.5306498868746297,
+        "mean_reconstruction_cosine": 0.7028331157376383,
+        "normalized_frobenius_error": 0.6850913173624158,
+        "r2_about_train_mean": 0.4664327742704001
+      }
+    },
+    {
+      "raw_chord_test": {
+        "fraction_raw_energy_reconstructed": 0.8751275160227259,
+        "mean_reconstruction_cosine": 0.9613625786333835,
+        "normalized_frobenius_error": 0.35337300968986607,
+        "r2_about_train_mean": 0.8554401878529366
+      },
+      "seed": 1741,
+      "split": {
+        "test": {
+          "categories": {
+            "helpfulness": 12,
+            "honesty": 8,
+            "instruction_following": 12,
+            "safety": 8
+          },
+          "clusters": 10,
+          "prompts": 40
+        },
+        "train": {
+          "categories": {
+            "helpfulness": 36,
+            "honesty": 24,
+            "instruction_following": 36,
+            "safety": 24
+          },
+          "clusters": 30,
+          "prompts": 120
+        },
+        "validation": {
+          "categories": {
+            "helpfulness": 12,
+            "honesty": 8,
+            "instruction_following": 12,
+            "safety": 8
+          },
+          "clusters": 10,
+          "prompts": 40
+        }
+      },
+      "test": {
+        "fraction_raw_energy_reconstructed": 0.5358872863475462,
+        "mean_reconstruction_cosine": 0.6907543000935504,
+        "normalized_frobenius_error": 0.6812581842829147,
+        "r2_about_train_mean": 0.4699321193415871
+      },
+      "test_by_category": {
+        "helpfulness": {
+          "fraction_raw_energy_reconstructed": 0.5978735210990569,
+          "mean_reconstruction_cosine": 0.7425476563723027,
+          "normalized_frobenius_error": 0.6341344328302503,
+          "prompts": 12,
+          "r2_about_train_mean": 0.5566741506829676
+        },
+        "honesty": {
+          "fraction_raw_energy_reconstructed": 0.2471188505983668,
+          "mean_reconstruction_cosine": 0.5363605915747185,
+          "normalized_frobenius_error": 0.8676872416957813,
+          "prompts": 8,
+          "r2_about_train_mean": 0.2099366663751704
+        },
+        "instruction_following": {
+          "fraction_raw_energy_reconstructed": 0.6699531673659479,
+          "mean_reconstruction_cosine": 0.8127241621097929,
+          "normalized_frobenius_error": 0.5744970257834692,
+          "prompts": 12,
+          "r2_about_train_mean": 0.5944535415191592
+        },
+        "safety": {
+          "fraction_raw_energy_reconstructed": 0.3612483231846022,
+          "mean_reconstruction_cosine": 0.5845031809190381,
+          "normalized_frobenius_error": 0.7992194171911727,
+          "prompts": 8,
+          "r2_about_train_mean": 0.48403606678004474
+        }
+      },
+      "validation": {
+        "fraction_raw_energy_reconstructed": 0.45149232981308285,
+        "mean_reconstruction_cosine": 0.6950723184953179,
+        "normalized_frobenius_error": 0.7406130367384287,
+        "r2_about_train_mean": 0.38658724373500575
+      }
+    },
+    {
+      "raw_chord_test": {
+        "fraction_raw_energy_reconstructed": 0.8720458336064429,
+        "mean_reconstruction_cosine": 0.9623212409221079,
+        "normalized_frobenius_error": 0.3577068162525801,
+        "r2_about_train_mean": 0.8562624867479186
+      },
+      "seed": 1742,
+      "split": {
+        "test": {
+          "categories": {
+            "helpfulness": 12,
+            "honesty": 8,
+            "instruction_following": 12,
+            "safety": 8
+          },
+          "clusters": 10,
+          "prompts": 40
+        },
+        "train": {
+          "categories": {
+            "helpfulness": 36,
+            "honesty": 24,
+            "instruction_following": 36,
+            "safety": 24
+          },
+          "clusters": 30,
+          "prompts": 120
+        },
+        "validation": {
+          "categories": {
+            "helpfulness": 12,
+            "honesty": 8,
+            "instruction_following": 12,
+            "safety": 8
+          },
+          "clusters": 10,
+          "prompts": 40
+        }
+      },
+      "test": {
+        "fraction_raw_energy_reconstructed": 0.46937954436976304,
+        "mean_reconstruction_cosine": 0.6826494392512689,
+        "normalized_frobenius_error": 0.7284369949626646,
+        "r2_about_train_mean": 0.40968739055086545
+      },
+      "test_by_category": {
+        "helpfulness": {
+          "fraction_raw_energy_reconstructed": 0.6027681231947999,
+          "mean_reconstruction_cosine": 0.7479591679434071,
+          "normalized_frobenius_error": 0.630263339252094,
+          "prompts": 12,
+          "r2_about_train_mean": 0.5581933010489588
+        },
+        "honesty": {
+          "fraction_raw_energy_reconstructed": 0.21383422128940677,
+          "mean_reconstruction_cosine": 0.5045520490658448,
+          "normalized_frobenius_error": 0.886659900249579,
+          "prompts": 8,
+          "r2_about_train_mean": 0.18517709472986887
+        },
+        "instruction_following": {
+          "fraction_raw_energy_reconstructed": 0.691476279810284,
+          "mean_reconstruction_cosine": 0.8047614385360874,
+          "normalized_frobenius_error": 0.5554491157520336,
+          "prompts": 12,
+          "r2_about_train_mean": 0.6212854384598798
+        },
+        "safety": {
+          "fraction_raw_energy_reconstructed": 0.3367020574204407,
+          "mean_reconstruction_cosine": 0.5796142379251251,
+          "normalized_frobenius_error": 0.8144310545279811,
+          "prompts": 8,
+          "r2_about_train_mean": 0.47943125060879577
+        }
+      },
+      "validation": {
+        "fraction_raw_energy_reconstructed": 0.5423100446254794,
+        "mean_reconstruction_cosine": 0.6987117646478237,
+        "normalized_frobenius_error": 0.6765278674042339,
+        "r2_about_train_mean": 0.47648074193994316
+      }
+    },
+    {
+      "raw_chord_test": {
+        "fraction_raw_energy_reconstructed": 0.8744216177836512,
+        "mean_reconstruction_cosine": 0.9602289743783963,
+        "normalized_frobenius_error": 0.35437040256820085,
+        "r2_about_train_mean": 0.8524598215016366
+      },
+      "seed": 1743,
+      "split": {
+        "test": {
+          "categories": {
+            "helpfulness": 12,
+            "honesty": 8,
+            "instruction_following": 12,
+            "safety": 8
+          },
+          "clusters": 10,
+          "prompts": 40
+        },
+        "train": {
+          "categories": {
+            "helpfulness": 36,
+            "honesty": 24,
+            "instruction_following": 36,
+            "safety": 24
+          },
+          "clusters": 30,
+          "prompts": 120
+        },
+        "validation": {
+          "categories": {
+            "helpfulness": 12,
+            "honesty": 8,
+            "instruction_following": 12,
+            "safety": 8
+          },
+          "clusters": 10,
+          "prompts": 40
+        }
+      },
+      "test": {
+        "fraction_raw_energy_reconstructed": 0.6135421204005745,
+        "mean_reconstruction_cosine": 0.6972209049288438,
+        "normalized_frobenius_error": 0.621657365113151,
+        "r2_about_train_mean": 0.5535918102076103
+      },
+      "test_by_category": {
+        "helpfulness": {
+          "fraction_raw_energy_reconstructed": 0.5949465612307683,
+          "mean_reconstruction_cosine": 0.7479587033721196,
+          "normalized_frobenius_error": 0.6364380871453497,
+          "prompts": 12,
+          "r2_about_train_mean": 0.544913190067168
+        },
+        "honesty": {
+          "fraction_raw_energy_reconstructed": 0.2946022899375361,
+          "mean_reconstruction_cosine": 0.5352487417060204,
+          "normalized_frobenius_error": 0.8398795806914607,
+          "prompts": 8,
+          "r2_about_train_mean": 0.26045762143286655
+        },
+        "instruction_following": {
+          "fraction_raw_energy_reconstructed": 0.7412339649027276,
+          "mean_reconstruction_cosine": 0.836014321670817,
+          "normalized_frobenius_error": 0.5086905101309365,
+          "prompts": 12,
+          "r2_about_train_mean": 0.6794132462740581
+        },
+        "safety": {
+          "fraction_raw_energy_reconstructed": 0.341546951993251,
+          "mean_reconstruction_cosine": 0.5748962448362394,
+          "normalized_frobenius_error": 0.8114511987832349,
+          "prompts": 8,
+          "r2_about_train_mean": 0.47650941535857727
+        }
+      },
+      "validation": {
+        "fraction_raw_energy_reconstructed": 0.5024307749248436,
+        "mean_reconstruction_cosine": 0.6976016634921012,
+        "normalized_frobenius_error": 0.7053858696310527,
+        "r2_about_train_mean": 0.4380190500157778
+      }
+    },
+    {
+      "raw_chord_test": {
+        "fraction_raw_energy_reconstructed": 0.878128673058566,
+        "mean_reconstruction_cosine": 0.9625209388220103,
+        "normalized_frobenius_error": 0.3491007403908418,
+        "r2_about_train_mean": 0.8594966110912043
+      },
+      "seed": 1744,
+      "split": {
+        "test": {
+          "categories": {
+            "helpfulness": 12,
+            "honesty": 8,
+            "instruction_following": 12,
+            "safety": 8
+          },
+          "clusters": 10,
+          "prompts": 40
+        },
+        "train": {
+          "categories": {
+            "helpfulness": 36,
+            "honesty": 24,
+            "instruction_following": 36,
+            "safety": 24
+          },
+          "clusters": 30,
+          "prompts": 120
+        },
+        "validation": {
+          "categories": {
+            "helpfulness": 12,
+            "honesty": 8,
+            "instruction_following": 12,
+            "safety": 8
+          },
+          "clusters": 10,
+          "prompts": 40
+        }
+      },
+      "test": {
+        "fraction_raw_energy_reconstructed": 0.5132468618016742,
+        "mean_reconstruction_cosine": 0.694245041347191,
+        "normalized_frobenius_error": 0.6976769583398363,
+        "r2_about_train_mean": 0.44602279577243686
+      },
+      "test_by_category": {
+        "helpfulness": {
+          "fraction_raw_energy_reconstructed": 0.5634519217510374,
+          "mean_reconstruction_cosine": 0.7295497063982923,
+          "normalized_frobenius_error": 0.6607178507116049,
+          "prompts": 12,
+          "r2_about_train_mean": 0.5233877909747611
+        },
+        "honesty": {
+          "fraction_raw_energy_reconstructed": 0.28123693044539155,
+          "mean_reconstruction_cosine": 0.5835789292053681,
+          "normalized_frobenius_error": 0.8477989558584089,
+          "prompts": 8,
+          "r2_about_train_mean": 0.23407828802496045
+        },
+        "instruction_following": {
+          "fraction_raw_energy_reconstructed": 0.6812351286536245,
+          "mean_reconstruction_cosine": 0.8161759677531593,
+          "normalized_frobenius_error": 0.5645926596639169,
+          "prompts": 12,
+          "r2_about_train_mean": 0.6058116393980868
+        },
+        "safety": {
+          "fraction_raw_energy_reconstructed": 0.3340537484603563,
+          "mean_reconstruction_cosine": 0.5690577651494481,
+          "normalized_frobenius_error": 0.816055299314724,
+          "prompts": 8,
+          "r2_about_train_mean": 0.46516772956082253
+        }
+      },
+      "validation": {
+        "fraction_raw_energy_reconstructed": 0.57100414280614,
+        "mean_reconstruction_cosine": 0.6962568248744102,
+        "normalized_frobenius_error": 0.6549777532052978,
+        "r2_about_train_mean": 0.5073383273153258
+      }
+    },
+    {
+      "raw_chord_test": {
+        "fraction_raw_energy_reconstructed": 0.8718901040490711,
+        "mean_reconstruction_cosine": 0.9667225282489416,
+        "normalized_frobenius_error": 0.3579244277091589,
+        "r2_about_train_mean": 0.8540038163669124
+      },
+      "seed": 1745,
+      "split": {
+        "test": {
+          "categories": {
+            "helpfulness": 12,
+            "honesty": 8,
+            "instruction_following": 12,
+            "safety": 8
+          },
+          "clusters": 10,
+          "prompts": 40
+        },
+        "train": {
+          "categories": {
+            "helpfulness": 36,
+            "honesty": 24,
+            "instruction_following": 36,
+            "safety": 24
+          },
+          "clusters": 30,
+          "prompts": 120
+        },
+        "validation": {
+          "categories": {
+            "helpfulness": 12,
+            "honesty": 8,
+            "instruction_following": 12,
+            "safety": 8
+          },
+          "clusters": 10,
+          "prompts": 40
+        }
+      },
+      "test": {
+        "fraction_raw_energy_reconstructed": 0.4279343089402887,
+        "mean_reconstruction_cosine": 0.6723733878100596,
+        "normalized_frobenius_error": 0.7563502436435856,
+        "r2_about_train_mean": 0.3536227280114268
+      },
+      "test_by_category": {
+        "helpfulness": {
+          "fraction_raw_energy_reconstructed": 0.6572459379022526,
+          "mean_reconstruction_cosine": 0.7761867757393985,
+          "normalized_frobenius_error": 0.5854520151965893,
+          "prompts": 12,
+          "r2_about_train_mean": 0.6168831909102845
+        },
+        "honesty": {
+          "fraction_raw_energy_reconstructed": 0.168968909447463,
+          "mean_reconstruction_cosine": 0.47729654177865927,
+          "normalized_frobenius_error": 0.911609066734495,
+          "prompts": 8,
+          "r2_about_train_mean": 0.12420484749532767
+        },
+        "instruction_following": {
+          "fraction_raw_energy_reconstructed": 0.6625321518078109,
+          "mean_reconstruction_cosine": 0.8068524200833508,
+          "normalized_frobenius_error": 0.5809198294017764,
+          "prompts": 12,
+          "r2_about_train_mean": 0.5855797289294029
+        },
+        "safety": {
+          "fraction_raw_energy_reconstructed": 0.25433011866557875,
+          "mean_reconstruction_cosine": 0.5100116033806037,
+          "normalized_frobenius_error": 0.8635217897276369,
+          "prompts": 8,
+          "r2_about_train_mean": 0.23595878539220883
+        }
+      },
+      "validation": {
+        "fraction_raw_energy_reconstructed": 0.540895946241941,
+        "mean_reconstruction_cosine": 0.7050959914098627,
+        "normalized_frobenius_error": 0.6775721760506839,
+        "r2_about_train_mean": 0.477242626318958
+      }
+    },
+    {
+      "raw_chord_test": {
+        "fraction_raw_energy_reconstructed": 0.880181098167816,
+        "mean_reconstruction_cosine": 0.9618430226088412,
+        "normalized_frobenius_error": 0.3461486701291572,
+        "r2_about_train_mean": 0.8604132182361596
+      },
+      "seed": 1746,
+      "split": {
+        "test": {
+          "categories": {
+            "helpfulness": 12,
+            "honesty": 8,
+            "instruction_following": 12,
+            "safety": 8
+          },
+          "clusters": 10,
+          "prompts": 40
+        },
+        "train": {
+          "categories": {
+            "helpfulness": 36,
+            "honesty": 24,
+            "instruction_following": 36,
+            "safety": 24
+          },
+          "clusters": 30,
+          "prompts": 120
+        },
+        "validation": {
+          "categories": {
+            "helpfulness": 12,
+            "honesty": 8,
+            "instruction_following": 12,
+            "safety": 8
+          },
+          "clusters": 10,
+          "prompts": 40
+        }
+      },
+      "test": {
+        "fraction_raw_energy_reconstructed": 0.5254602916164963,
+        "mean_reconstruction_cosine": 0.6973759190535019,
+        "normalized_frobenius_error": 0.6888684260317812,
+        "r2_about_train_mean": 0.45558195155378667
+      },
+      "test_by_category": {
+        "helpfulness": {
+          "fraction_raw_energy_reconstructed": 0.6247287009524995,
+          "mean_reconstruction_cosine": 0.7573685265094328,
+          "normalized_frobenius_error": 0.6125939103904808,
+          "prompts": 12,
+          "r2_about_train_mean": 0.5752910801589659
+        },
+        "honesty": {
+          "fraction_raw_energy_reconstructed": 0.2596023929826725,
+          "mean_reconstruction_cosine": 0.5510492959564567,
+          "normalized_frobenius_error": 0.8604636000536731,
+          "prompts": 8,
+          "r2_about_train_mean": 0.21259580965801395
+        },
+        "instruction_following": {
+          "fraction_raw_energy_reconstructed": 0.6966279649452662,
+          "mean_reconstruction_cosine": 0.8212647366720711,
+          "normalized_frobenius_error": 0.550792188629009,
+          "prompts": 12,
+          "r2_about_train_mean": 0.6254739350148737
+        },
+        "safety": {
+          "fraction_raw_energy_reconstructed": 0.3245888531657314,
+          "mean_reconstruction_cosine": 0.5678804050372382,
+          "normalized_frobenius_error": 0.8218340141623907,
+          "prompts": 8,
+          "r2_about_train_mean": 0.3608241239172608
+        }
+      },
+      "validation": {
+        "fraction_raw_energy_reconstructed": 0.46937384092451884,
+        "mean_reconstruction_cosine": 0.6890361679973549,
+        "normalized_frobenius_error": 0.7284409098035894,
+        "r2_about_train_mean": 0.4083418254382333
+      }
+    },
+    {
+      "raw_chord_test": {
+        "fraction_raw_energy_reconstructed": 0.8795500405354701,
+        "mean_reconstruction_cosine": 0.9617282352238419,
+        "normalized_frobenius_error": 0.3470590143830439,
+        "r2_about_train_mean": 0.8614926527889356
+      },
+      "seed": 1747,
+      "split": {
+        "test": {
+          "categories": {
+            "helpfulness": 12,
+            "honesty": 8,
+            "instruction_following": 12,
+            "safety": 8
+          },
+          "clusters": 10,
+          "prompts": 40
+        },
+        "train": {
+          "categories": {
+            "helpfulness": 36,
+            "honesty": 24,
+            "instruction_following": 36,
+            "safety": 24
+          },
+          "clusters": 30,
+          "prompts": 120
+        },
+        "validation": {
+          "categories": {
+            "helpfulness": 12,
+            "honesty": 8,
+            "instruction_following": 12,
+            "safety": 8
+          },
+          "clusters": 10,
+          "prompts": 40
+        }
+      },
+      "test": {
+        "fraction_raw_energy_reconstructed": 0.5151526845279986,
+        "mean_reconstruction_cosine": 0.6894336507684343,
+        "normalized_frobenius_error": 0.6963097841277267,
+        "r2_about_train_mean": 0.45013917957018645
+      },
+      "test_by_category": {
+        "helpfulness": {
+          "fraction_raw_energy_reconstructed": 0.5599010625755387,
+          "mean_reconstruction_cosine": 0.7368699095670377,
+          "normalized_frobenius_error": 0.6633995307689488,
+          "prompts": 12,
+          "r2_about_train_mean": 0.5272271529264239
+        },
+        "honesty": {
+          "fraction_raw_energy_reconstructed": 0.26310933328539177,
+          "mean_reconstruction_cosine": 0.5415938116863313,
+          "normalized_frobenius_error": 0.8584233610023717,
+          "prompts": 8,
+          "r2_about_train_mean": 0.22492456770404
+        },
+        "instruction_following": {
+          "fraction_raw_energy_reconstructed": 0.6897374558409803,
+          "mean_reconstruction_cosine": 0.8115616046150044,
+          "normalized_frobenius_error": 0.5570121579992843,
+          "prompts": 12,
+          "r2_about_train_mean": 0.6152402871655046
+        },
+        "safety": {
+          "fraction_raw_energy_reconstructed": 0.3526170396773527,
+          "mean_reconstruction_cosine": 0.5829271708579852,
+          "normalized_frobenius_error": 0.8046011187679566,
+          "prompts": 8,
+          "r2_about_train_mean": 0.4688062936142777
+        }
+      },
+      "validation": {
+        "fraction_raw_energy_reconstructed": 0.5233429025394674,
+        "mean_reconstruction_cosine": 0.6907158714565741,
+        "normalized_frobenius_error": 0.6904035757877653,
+        "r2_about_train_mean": 0.4560349776105723
+      }
+    },
+    {
+      "raw_chord_test": {
+        "fraction_raw_energy_reconstructed": 0.8782742701083996,
+        "mean_reconstruction_cosine": 0.9596637317255757,
+        "normalized_frobenius_error": 0.3488921465031856,
+        "r2_about_train_mean": 0.8576057563739922
+      },
+      "seed": 1748,
+      "split": {
+        "test": {
+          "categories": {
+            "helpfulness": 12,
+            "honesty": 8,
+            "instruction_following": 12,
+            "safety": 8
+          },
+          "clusters": 10,
+          "prompts": 40
+        },
+        "train": {
+          "categories": {
+            "helpfulness": 36,
+            "honesty": 24,
+            "instruction_following": 36,
+            "safety": 24
+          },
+          "clusters": 30,
+          "prompts": 120
+        },
+        "validation": {
+          "categories": {
+            "helpfulness": 12,
+            "honesty": 8,
+            "instruction_following": 12,
+            "safety": 8
+          },
+          "clusters": 10,
+          "prompts": 40
+        }
+      },
+      "test": {
+        "fraction_raw_energy_reconstructed": 0.5568539144634808,
+        "mean_reconstruction_cosine": 0.7066367171628075,
+        "normalized_frobenius_error": 0.6656921852752361,
+        "r2_about_train_mean": 0.4903098315462183
+      },
+      "test_by_category": {
+        "helpfulness": {
+          "fraction_raw_energy_reconstructed": 0.654730982998827,
+          "mean_reconstruction_cosine": 0.7734429795980673,
+          "normalized_frobenius_error": 0.5875959640783562,
+          "prompts": 12,
+          "r2_about_train_mean": 0.6128106138473258
+        },
+        "honesty": {
+          "fraction_raw_energy_reconstructed": 0.2868952384045338,
+          "mean_reconstruction_cosine": 0.5769439833788583,
+          "normalized_frobenius_error": 0.8444553046760179,
+          "prompts": 8,
+          "r2_about_train_mean": 0.23691387401407626
+        },
+        "instruction_following": {
+          "fraction_raw_energy_reconstructed": 0.7036490103084343,
+          "mean_reconstruction_cosine": 0.8150601855818013,
+          "normalized_frobenius_error": 0.5443812907251365,
+          "prompts": 12,
+          "r2_about_train_mean": 0.6348734287144044
+        },
+        "safety": {
+          "fraction_raw_energy_reconstructed": 0.32981374562449883,
+          "mean_reconstruction_cosine": 0.5734848548732251,
+          "normalized_frobenius_error": 0.8186490422491809,
+          "prompts": 8,
+          "r2_about_train_mean": 0.42487203978819854
+        }
+      },
+      "validation": {
+        "fraction_raw_energy_reconstructed": 0.45651317993088536,
+        "mean_reconstruction_cosine": 0.6903807211394785,
+        "normalized_frobenius_error": 0.7372155858832032,
+        "r2_about_train_mean": 0.3885459380130487
+      }
+    }
+  ],
+  "rank": 32,
+  "raw_chord_r2_across_seeds": {
+    "maximum": 0.8634435344381651,
+    "mean": 0.8577445564297561,
+    "minimum": 0.8446549454991321,
+    "std": 0.004829677093527939
+  },
+  "runtime": {
+    "created_at_utc": "2026-07-14T09:28:23.012700+00:00",
+    "cuda_available": true,
+    "cuda_runtime": "12.4",
+    "git": {
+      "branch": "main",
+      "commit": "ded4ba0a9ad3310b504e7cb428e01fa96811103a",
+      "dirty": true
+    },
+    "gpu": {
+      "compute_capability": [
+        7,
+        5
+      ],
+      "name": "NVIDIA GeForce RTX 2060",
+      "vram_bytes": 6442123264
+    },
+    "hf_token_present": true,
+    "huggingface_hub": "1.4.1",
+    "numpy": "2.2.6",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "python": "3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]",
+    "sklearn": "1.7.2",
+    "torch": "2.6.0+cu124",
+    "transformers": "5.3.0"
+  },
+  "seed_1729_cluster_bootstrap": {
+    "ci_025": 0.29660489752963914,
+    "ci_975": 0.6141042708913267,
+    "mean": 0.4700641025155849,
+    "median": 0.47242567339313357,
+    "samples": 20000
+  },
+  "seeds": 20,
+  "split_protocol": "category-stratified and cluster-disjoint 60/20/20",
+  "status": "exploratory_followup",
+  "test_r2_across_seeds": {
+    "fraction_at_least_0_70": 0.0,
+    "maximum": 0.5535918102076103,
+    "mean": 0.4430475365051598,
+    "minimum": 0.3536227280114268,
+    "std": 0.04682689725886672
+  }
+}

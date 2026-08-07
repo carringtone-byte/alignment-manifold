@@ -1,0 +1,44 @@
+experiment:
+  name: olmo2_1b_sft_dpo_smoke
+  seed: 1729
+  artifact_dir: artifacts/smoke
+  hf_cache_dir: artifacts/hf_cache
+
+checkpoints:
+  sft:
+    repo_id: allenai/OLMo-2-0425-1B-SFT
+    revision: main
+    role: parent
+  dpo:
+    repo_id: allenai/OLMo-2-0425-1B-DPO
+    revision: main
+    role: preference_aligned
+
+data:
+  path: data/smoke_prompts.jsonl
+  expected_examples: 200
+  max_length: 512
+  train_fraction: 0.6
+  validation_fraction: 0.2
+  test_fraction: 0.2
+
+extraction:
+  device: cuda
+  dtype: float16
+  batch_size: 1
+  token_regime: final_prompt
+  store_logits: true
+
+geometry:
+  ranks: [1, 2, 4, 8, 16, 32]
+  random_controls: 20
+  bootstrap_samples: 50
+  local_components: [2, 4]
+
+causal:
+  strengths: [0.5, 1.0, 1.5]
+  random_controls: 3
+  layer_screen_examples: 12
+  layer_screen_strength: 1.0
+  max_validation_examples: 40
+  max_test_examples: 40

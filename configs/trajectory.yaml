@@ -1,0 +1,67 @@
+experiment:
+  name: olmo2_1b_rlvr_checkpoint_trajectory
+  seed: 1729
+  artifact_dir: artifacts/trajectory
+  hf_cache_dir: artifacts/hf_cache
+  ephemeral_cache_root: artifacts/ephemeral_hf_cache
+
+checkpoints:
+  dpo:
+    repo_id: allenai/OLMo-2-0425-1B-DPO
+    revision: c4b0485961ab24c2433b090f3b922f0913a9290f
+    source_revision: main
+    role: trajectory_parent
+  rlvr_0200:
+    repo_id: allenai/OLMo-2-0425-1B-Instruct
+    revision: 0f49bb9c8bb23d43b51b1732be137a99bfaaf9ec
+    source_revision: step_200
+    role: rlvr_intermediate
+    ephemeral_cache: true
+  rlvr_1400:
+    repo_id: allenai/OLMo-2-0425-1B-Instruct
+    revision: f354d6c946069e94c330df51b754903a4ad77fbe
+    source_revision: step_1400
+    role: rlvr_intermediate
+    ephemeral_cache: true
+  rlvr_2600:
+    repo_id: allenai/OLMo-2-0425-1B-Instruct
+    revision: a7b49f0c28561ccc212976a6b036ee556ee61fd7
+    source_revision: step_2600
+    role: rlvr_intermediate
+    ephemeral_cache: true
+data:
+  path: data/smoke_prompts.jsonl
+  expected_examples: 200
+  max_length: 512
+  train_fraction: 0.6
+  validation_fraction: 0.2
+  test_fraction: 0.2
+
+extraction:
+  device: cuda
+  dtype: float16
+  batch_size: 1
+  token_regime: final_prompt
+  store_logits: false
+
+geometry:
+  ranks: [1, 2, 4, 8, 16, 32]
+  random_controls: 20
+  bootstrap_samples: 50
+  local_components: [4]
+
+trajectory:
+  reference_checkpoint: dpo
+  ordered_checkpoints:
+    - rlvr_0200
+    - rlvr_1400
+    - rlvr_2600
+  training_steps:
+    rlvr_0200: 200
+    rlvr_1400: 1400
+    rlvr_2600: 2600
+  primary_layer: 14
+  interpolation:
+    left: rlvr_0200
+    middle: rlvr_1400
+    right: rlvr_2600

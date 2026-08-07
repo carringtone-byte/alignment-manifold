@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "alignment-manifold"
+version = "0.1.0"
+description = "Matched-checkpoint activation geometry and causal steering experiments"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "Carringtone Kinyanjui" }]
+dependencies = [
+  "huggingface-hub>=1.4",
+  "numpy>=2.0",
+  "PyYAML>=6.0",
+  "scikit-learn>=1.6",
+  "scipy>=1.14",
+  "torch>=2.6",
+  "transformers>=5.3",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+viz = ["matplotlib>=3.10"]
+quant = ["accelerate>=1.13", "bitsandbytes>=0.49"]
+
+[project.scripts]
+alignment-manifold = "alignment_manifold.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

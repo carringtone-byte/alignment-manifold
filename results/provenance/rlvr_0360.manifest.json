@@ -1,0 +1,55 @@
+{
+  "artifact_path": "C:\\Users\\user\\Documents\\GitHub\\alignment_manifold\\artifacts\\trajectory_7b\\extractions\\rlvr_0360.npz",
+  "artifact_sha256": "80e23162fdad2e48a50a0103c826b9ffe39c161b9d021355f7e835b64ede40d8",
+  "cache_policy": "ephemeral_per_checkpoint",
+  "checkpoint": {
+    "repo_id": "allenai/OLMo-2-1124-7B-Instruct",
+    "requested_revision": "f942bc3aae378a7ab6751bc08908262ed517a75a",
+    "resolved_commit": "f942bc3aae378a7ab6751bc08908262ed517a75a"
+  },
+  "checkpoint_name": "rlvr_0360",
+  "checkpoint_role": "rlvr_intermediate",
+  "config_path": "C:\\Users\\user\\Documents\\GitHub\\alignment_manifold\\configs\\trajectory_7b.yaml",
+  "config_sha256": "63fcaf605f99c02b8a933ec6dc5bb0fc06aa7f92f503e87f0ec5899790cd4223",
+  "data_path": "C:\\Users\\user\\Documents\\GitHub\\alignment_manifold\\data\\smoke_prompts.jsonl",
+  "data_sha256": "223bb5494fae71a359ab0144a624c961f4c91983b3f4be0a5b4912dc6f85ca2a",
+  "device": "cuda",
+  "double_quant": true,
+  "dtype": "float16",
+  "elapsed_seconds": 1623.8207142353058,
+  "examples": 200,
+  "hidden_size": 4096,
+  "kind": "matched_activation_extraction",
+  "layers": 32,
+  "quantization": "nf4",
+  "record_order_hash": "2576b9b2eecdf469f4e0486d034ed2646b555b4dd947dc6bf31df6845d0114b5",
+  "runtime": {
+    "created_at_utc": "2026-07-14T08:25:24.574106+00:00",
+    "cuda_available": true,
+    "cuda_runtime": "12.4",
+    "git": {
+      "branch": "main",
+      "commit": "ded4ba0a9ad3310b504e7cb428e01fa96811103a",
+      "dirty": true
+    },
+    "gpu": {
+      "compute_capability": [
+        7,
+        5
+      ],
+      "name": "NVIDIA GeForce RTX 2060",
+      "vram_bytes": 6442123264
+    },
+    "hf_token_present": true,
+    "huggingface_hub": "1.4.1",
+    "numpy": "2.2.6",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "python": "3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]",
+    "sklearn": "1.7.2",
+    "torch": "2.6.0+cu124",
+    "transformers": "5.3.0"
+  },
+  "token_regime": "final_prompt",
+  "tokenizer_hash": "893eb696e88f785f01680861fb6077e2274ecbd369f97b3283e7c648ae615fc6",
+  "vocab_size": 100352
+}

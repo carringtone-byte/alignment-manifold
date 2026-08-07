@@ -1,0 +1,14 @@
+{
+  "categories": {
+    "helpfulness": 60,
+    "honesty": 40,
+    "instruction_following": 60,
+    "safety": 40
+  },
+  "clusters": 50,
+  "examples": 200,
+  "file_sha256": "223bb5494fae71a359ab0144a624c961f4c91983b3f4be0a5b4912dc6f85ca2a",
+  "kind": "deterministic_smoke_prompt_set",
+  "record_hash": "b0e8e289867051b92cfe3a913f8865ff89181739ba9f5430bda63a0a49d0ea59",
+  "seed": 1729
+}

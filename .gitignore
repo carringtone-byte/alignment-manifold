@@ -1,0 +1,50 @@
+# Secrets and local environment
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+*.egg-info/
+
+# Hugging Face and model caches
+.cache/
+huggingface/
+hf_cache/
+models/
+checkpoints/
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+
+# Generated experiment artifacts
+artifacts/
+data/raw/
+data/processed/
+runs/
+outputs/
+reports/generated/
+*.npy
+*.npz
+*.zarr/
+
+# Logs and local tooling
+*.log
+wandb/
+.idea/
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
