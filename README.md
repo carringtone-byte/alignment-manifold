@@ -6,7 +6,7 @@ trajectories, or exhibit useful local/nonlinear geometry. It also tests whether
 compressed activation changes remain causally active when inserted into the
 parent checkpoint.
 
-The central result is deliberately mixed:
+  We observe mixed results:
 
 - **Supported:** activation changes follow a strong prompt-conditional path
   through training time.
@@ -15,8 +15,7 @@ The central result is deliberately mixed:
 - **Not supported:** the tested local and nonlinear alternatives do not provide
   a convincing improvement over the linear baselines.
 
-This distinction matters for alignment research. A representation can be
-predictable along training time without being governed by one small, universal
+Thus, a representation can be predictable along training time without being governed by one small, universal
 steering manifold.
 
 ## Main 7B Result
@@ -32,7 +31,7 @@ of the causally selected layer in the earlier 1B experiment.
 | Extended-rank recovery | No compact recovery | Not supported |
 | Local/nonlinear advantage | No reliable improvement | Not supported |
 
-Exact machine-readable values are included in [`results/`](results/). The full
+Values are included in [`results/`](results/). The full
 methods, registered decision rules, robustness checks, supported claims,
 unsupported claims, and limitations are in
 [`reports/TRAJECTORY_7B_RESULTS.md`](reports/TRAJECTORY_7B_RESULTS.md).
@@ -54,19 +53,6 @@ These results are documented in:
 - [`reports/SMOKE_RESULTS.md`](reports/SMOKE_RESULTS.md)
 - [`reports/TRAJECTORY_RESULTS.md`](reports/TRAJECTORY_RESULTS.md)
 
-## Research Discipline
-
-The project uses explicit decision rules:
-
-- Compact reconstruction without causal recovery is treated as readout
-  geometry, not a causal mechanism.
-- A local or nonlinear interpretation requires held-out improvement over
-  simpler linear baselines.
-- Failure of compact reconstruction is reported as evidence against the tested
-  shared-subspace hypothesis, not proof against every possible nonlinear
-  description.
-- Positive temporal interpolation is kept separate from the unsupported compact
-  manifold claim.
 
 ## Repository Contents
 
@@ -96,8 +82,6 @@ python -m pip install -e ".[dev,viz]"
 pytest -q
 ```
 
-The release test suite contains ten tests covering prompt generation,
-trajectory metrics, geometry, and causal metrics.
 
 ## Reproduction
 
@@ -139,8 +123,3 @@ official model cards and responsible-use terms before downloading them:
 Personal contributions and external dependencies are described in
 [`CONTRIBUTIONS.md`](CONTRIBUTIONS.md).
 
-## Status
-
-This is a research release. It supports the reported experiments and their
-audit trail; it is not a production steering library and does not claim a
-general solution to post-training interpretability or alignment.
